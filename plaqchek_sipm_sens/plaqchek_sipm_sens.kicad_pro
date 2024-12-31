@@ -232,10 +232,10 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "warning",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -326,6 +326,10 @@
     [
       "ae49fc30-e8ec-4ce4-a893-3d974076e2da",
       ""
+    ],
+    [
+      "008cdf4a-9a94-4460-9d91-1d3559ee66b4",
+      "SIPM Readout"
     ]
   ],
   "text_variables": {}

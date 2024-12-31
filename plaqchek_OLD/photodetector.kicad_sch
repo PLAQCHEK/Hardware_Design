@@ -1684,6 +1684,9 @@
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "R30") (unit 1)
         )
+        (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/24d7ee4c-f4a5-463e-ad3b-d9f5f5cd9bf7"
+          (reference "R30") (unit 1)
+        )
       )
     )
   )
@@ -2140,6 +2143,9 @@
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "C44") (unit 1)
         )
+        (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/24d7ee4c-f4a5-463e-ad3b-d9f5f5cd9bf7"
+          (reference "C44") (unit 1)
+        )
       )
     )
   )
@@ -2412,6 +2418,9 @@
       )
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
+          (reference "C43") (unit 1)
+        )
+        (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/24d7ee4c-f4a5-463e-ad3b-d9f5f5cd9bf7"
           (reference "C43") (unit 1)
         )
       )
@@ -2784,6 +2793,9 @@
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "U16") (unit 1)
         )
+        (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/24d7ee4c-f4a5-463e-ad3b-d9f5f5cd9bf7"
+          (reference "U16") (unit 1)
+        )
       )
     )
   )
@@ -2839,6 +2851,9 @@
       )
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
+          (reference "R29") (unit 1)
+        )
+        (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/24d7ee4c-f4a5-463e-ad3b-d9f5f5cd9bf7"
           (reference "R29") (unit 1)
         )
       )
