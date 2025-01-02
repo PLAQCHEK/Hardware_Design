@@ -1305,6 +1305,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0fd76d21-e1b7-46f2-8721-b8f6eb8d5fa0)
   )
+  (text "14 bits\nVref = 5V\nResolution = 0.0003052V = 305.2µv"
+    (at 238.76 27.94 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1bff1d4f-f043-4ff9-945b-b8fb0bf134e9)
+  )
   (text "breakdown coltage = 32.5V typ\n32V-33V\nTarget Vov of around 12V\nMax Vov = 16V\nMin Vov = 5V\nTarged vbias =  44.5V\nmax vbias = 48.5V\nmin vbias = 37.5V"
     (at 17.145 131.445 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))

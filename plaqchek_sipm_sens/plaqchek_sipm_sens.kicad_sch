@@ -4284,8 +4284,8 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2f77a112-e65a-439f-9f35-1f1e483b6992))
-    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b3))
-    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b3))
+    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b4))
+    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b4))
     (pin "4" (uuid 04f8e54c-fa84-46fe-b36a-d4d5c162e265))
     (pin "5" (uuid 506719f4-df82-4289-baa1-b1f296ce29d1))
     (instances

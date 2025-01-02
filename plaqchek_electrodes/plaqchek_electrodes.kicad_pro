@@ -183,14 +183,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.3,
-          "drill": 0.2
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -403,10 +395,10 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "ignore",
+      "simulation_model_issue": "error",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -418,7 +410,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "plaqchek_mlb.kicad_pro",
+    "filename": "plaqchek_electrodes.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -495,7 +487,7 @@
   },
   "sheets": [
     [
-      "78b9fc0a-e6ed-40e6-9e8a-246977ca39dd",
+      "b433248b-80d9-48b6-83c5-cbf8d6fba423",
       ""
     ]
   ],
