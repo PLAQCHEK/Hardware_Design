@@ -1040,6 +1040,10 @@
     (stroke (width 0) (type default))
     (uuid 2e607ff7-819f-4daf-901a-70129b4b1b47)
   )
+  (wire (pts (xy 260.985 122.555) (xy 260.985 126.365))
+    (stroke (width 0) (type default))
+    (uuid 2ebfaa9c-3200-4b90-9e33-4cbba9c53056)
+  )
   (wire (pts (xy 199.39 160.02) (xy 212.09 160.02))
     (stroke (width 0) (type default))
     (uuid 303ae421-b964-49ba-bbc1-e3152069ffa7)
@@ -1087,6 +1091,10 @@
   (wire (pts (xy 119.38 68.58) (xy 119.38 71.12))
     (stroke (width 0) (type default))
     (uuid 3a719c65-c92e-4ad7-a20d-863406807482)
+  )
+  (wire (pts (xy 245.11 123.19) (xy 245.11 127))
+    (stroke (width 0) (type default))
+    (uuid 3abd4d7b-a225-48c2-a516-3220f26c7990)
   )
   (wire (pts (xy 63.5 26.67) (xy 63.5 17.78))
     (stroke (width 0) (type default))
@@ -1568,6 +1576,10 @@
     (stroke (width 0) (type default))
     (uuid c646bdd4-63af-48e9-8a48-c15ab86a9730)
   )
+  (wire (pts (xy 245.11 139.065) (xy 245.11 142.875))
+    (stroke (width 0) (type default))
+    (uuid c751067f-1766-427b-b78b-73f0d1fdf323)
+  )
   (wire (pts (xy 60.96 24.13) (xy 60.96 26.67))
     (stroke (width 0) (type default))
     (uuid c8cadd62-57ac-4a58-ad3f-6df1bfb2f8e2)
@@ -1724,6 +1736,10 @@
     (stroke (width 0) (type default))
     (uuid f735f19e-c0ca-4c05-9846-245ec4a59440)
   )
+  (wire (pts (xy 260.985 139.065) (xy 260.985 142.875))
+    (stroke (width 0) (type default))
+    (uuid f73c2ef0-c602-4905-8a1b-e738295d4d22)
+  )
   (wire (pts (xy 212.09 160.02) (xy 219.71 160.02))
     (stroke (width 0) (type default))
     (uuid fbc49cb3-9188-4889-b1c7-125ec714a193)
@@ -1869,6 +1885,14 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dad48ffe-8993-4cc9-b169-f035dc4f37a3)
   )
+  (label "5V_R" (at 68.58 170.18 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid df831d4f-f1bc-4676-854f-d08711f46dde)
+  )
+  (label "-5V_R" (at 133.985 184.15 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e7e1a61a-475b-4845-8bff-5592bc4251bf)
+  )
   (label "VBIAS_POT_P" (at 66.04 73.66 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e847c1af-9de1-4402-9e5f-df8edb669f85)
@@ -1993,7 +2017,7 @@
     (property "Datasheet" "~" (at 177.8 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3fd1033d-f648-4513-bc47-7ff12d204230))
+    (pin "1" (uuid ade2cd3b-d006-4925-902b-4450b6647045))
     (instances
       (project "plaqchek_potentiostat"
         (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
@@ -2120,6 +2144,41 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "U8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 245.11 142.875 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0d2a9153-9b23-44d9-857a-e79fd05f16e9)
+    (property "Reference" "#PWR037" (at 245.11 149.225 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 245.11 147.955 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 245.11 142.875 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 245.11 142.875 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a61f9828-7d08-464b-8e74-aab88b7313b3))
+    (instances
+      (project "plaqchek_mlb"
+        (path "/78b9fc0a-e6ed-40e6-9e8a-246977ca39dd"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "#PWR035") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -2527,6 +2586,31 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "C41") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 260.985 139.065 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2c8c8842-6a98-4e68-b6e6-7984382689d5)
+    (property "Reference" "TP16" (at 263.525 135.128 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 263.525 137.668 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 266.065 139.065 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 266.065 139.065 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fcff5448-aca2-464e-8476-a58666f4f8dd))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP16") (unit 1)
         )
       )
     )
@@ -3051,6 +3135,31 @@
       (project "plaqchek_potentiostat"
         (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
           (reference "U3") (unit 2)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 260.985 122.555 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 520ba402-2b10-4c1c-9aa3-e4b0801bfdcb)
+    (property "Reference" "TP14" (at 263.525 118.618 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 263.525 121.158 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 266.065 122.555 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 266.065 122.555 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0467de45-7390-4dd8-8c9f-81ea2688b6d8))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP14") (unit 1)
         )
       )
     )
@@ -4093,6 +4202,66 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 245.11 123.19 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a989b03c-58dd-4d0e-862c-d16637afb010)
+    (property "Reference" "TP6" (at 247.65 119.253 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 247.65 121.793 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 250.19 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 250.19 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1e5fc048-2bad-4f2e-bcea-c1cb61450660))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 260.985 142.875 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid aa249553-47f2-46dd-9a96-bb4a18338ccc)
+    (property "Reference" "#PWR037" (at 260.985 149.225 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 260.985 147.955 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 260.985 142.875 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 260.985 142.875 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 82fb6a9b-cf2b-4202-a926-3bdb2ee5e122))
+    (instances
+      (project "plaqchek_mlb"
+        (path "/78b9fc0a-e6ed-40e6-9e8a-246977ca39dd"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "#PWR036") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR031") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:-5VA") (at 219.71 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid adecbde6-16f0-464f-a8ed-9c098095a4ed)
@@ -4347,6 +4516,41 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 245.11 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c0e35d22-c3b6-48bb-a367-6d8d72f89cb0)
+    (property "Reference" "#PWR037" (at 245.11 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 245.11 132.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 245.11 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 245.11 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 603f051b-ad9d-422b-937b-5cdd9c6e0f12))
+    (instances
+      (project "plaqchek_mlb"
+        (path "/78b9fc0a-e6ed-40e6-9e8a-246977ca39dd"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR031") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Amplifier_Operational:TL082") (at 142.24 137.16 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1125bad-d0da-48e2-abe3-f8c2210f5064)
@@ -4534,6 +4738,41 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/a76a4006-c11b-4e12-8044-4f306ceb06ac"
           (reference "#PWR012") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 260.985 126.365 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c9963ffa-dea8-4d57-90c1-a995758bee28)
+    (property "Reference" "#PWR037" (at 260.985 132.715 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 260.985 131.445 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 260.985 126.365 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 260.985 126.365 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 85f6519b-2d98-401b-be2b-c21e93c48f48))
+    (instances
+      (project "plaqchek_mlb"
+        (path "/78b9fc0a-e6ed-40e6-9e8a-246977ca39dd"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -4773,6 +5012,31 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/a76a4006-c11b-4e12-8044-4f306ceb06ac"
           (reference "C9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 245.11 139.065 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d754c33c-d0c1-4f87-9946-9c5369563b33)
+    (property "Reference" "TP15" (at 247.65 135.128 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 247.65 137.668 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 250.19 139.065 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 250.19 139.065 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ab986f11-c888-494f-8d59-4f5e41ea6760))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP15") (unit 1)
         )
       )
     )
