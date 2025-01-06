@@ -473,7 +473,7 @@
         )
         (pin input line (at -8.89 -1.27 0) (length 2.54)
           (name "SHDN" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at 8.89 -1.27 180) (length 2.54)
           (name "FB" (effects (font (size 1.27 1.27))))
@@ -1023,6 +1023,10 @@
     (stroke (width 0) (type default))
     (uuid 173810b8-0643-4cc2-9f85-d26089040a69)
   )
+  (wire (pts (xy 228.092 66.294) (xy 228.092 72.644))
+    (stroke (width 0) (type default))
+    (uuid 174f0dce-6f53-4cc1-b718-897e3c98ab07)
+  )
   (wire (pts (xy 52.705 99.06) (xy 52.705 101.6))
     (stroke (width 0) (type default))
     (uuid 192d2a32-7b91-4e23-97cd-416aebfed578)
@@ -1435,6 +1439,10 @@
     (stroke (width 0) (type default))
     (uuid a57ddf37-3338-481e-b3d8-a4a45400a0a1)
   )
+  (wire (pts (xy 267.97 66.294) (xy 267.97 72.644))
+    (stroke (width 0) (type default))
+    (uuid a5d25747-c852-4fa7-af42-5679c5735b94)
+  )
   (wire (pts (xy 80.01 153.035) (xy 80.01 150.495))
     (stroke (width 0) (type default))
     (uuid a60f9a81-fd59-4178-ab9a-ead4b2c871aa)
@@ -1479,6 +1487,10 @@
     (stroke (width 0) (type default))
     (uuid b363e84d-87df-44dc-b81a-3ec9efbdbdce)
   )
+  (wire (pts (xy 202.692 66.294) (xy 202.692 72.644))
+    (stroke (width 0) (type default))
+    (uuid b4bcd4b0-2f51-44bd-8f1d-ef2df97ada1b)
+  )
   (wire (pts (xy 104.14 137.795) (xy 107.95 137.795))
     (stroke (width 0) (type default))
     (uuid b57b613b-8ab9-40b9-9cda-c8e6d23fbdb7)
@@ -1495,6 +1507,10 @@
     (stroke (width 0) (type default))
     (uuid b999fd34-41b9-4c1e-9748-9fd4f71c9a30)
   )
+  (wire (pts (xy 215.646 66.294) (xy 215.646 72.644))
+    (stroke (width 0) (type default))
+    (uuid bcba2fb9-e52a-4c06-a380-6313ef9a0f34)
+  )
   (wire (pts (xy 226.06 96.52) (xy 229.235 96.52))
     (stroke (width 0) (type default))
     (uuid be74328f-bab8-4581-b711-281b1deb7091)
@@ -1502,6 +1518,10 @@
   (wire (pts (xy 199.39 96.52) (xy 202.565 96.52))
     (stroke (width 0) (type default))
     (uuid beffc95a-30d9-40e3-9755-ece136cc4243)
+  )
+  (wire (pts (xy 241.046 66.294) (xy 241.046 72.644))
+    (stroke (width 0) (type default))
+    (uuid bff2452d-dcf6-4343-83e0-ebc5a23f1804)
   )
   (wire (pts (xy 80.01 153.035) (xy 96.52 153.035))
     (stroke (width 0) (type default))
@@ -1570,6 +1590,10 @@
   (wire (pts (xy 92.075 91.44) (xy 98.425 91.44))
     (stroke (width 0) (type default))
     (uuid d9a97151-3d8b-4cba-9da9-6ffc380e3968)
+  )
+  (wire (pts (xy 255.016 66.294) (xy 255.016 72.644))
+    (stroke (width 0) (type default))
+    (uuid dcdd881a-3819-41b6-a7f9-3b5a341f09d2)
   )
   (wire (pts (xy 92.075 100.33) (xy 98.425 100.33))
     (stroke (width 0) (type default))
@@ -1728,6 +1752,27 @@
   (text "rdakhil" (at 277.495 193.04 0)
     (effects (font (size 1 1)) (justify left bottom))
     (uuid ebe4fda0-b1ec-485c-9f74-d4de65d0a4e9)
+  )
+
+  (label "5V_OUT" (at 92.075 137.795 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 386fe879-9f8c-4b97-809b-13a048706511)
+  )
+  (label "5V35_OUT" (at 230.505 92.71 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 59b0c7e8-b370-4ce8-b05a-297b07e08ec5)
+  )
+  (label "-5V_OUT" (at 228.6 148.59 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 5a9f00cb-fad6-4d4d-a7a2-7b117acd1276)
+  )
+  (label "PD_BIAS_OUT" (at 100.965 91.44 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 988b0732-383c-4784-8b9c-0157c981834c)
+  )
+  (label "1V8_OUT" (at 97.79 172.72 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b5eae98b-00df-454f-b3a1-3bc7885687f0)
   )
 
   (global_label "+6V" (shape input) (at 187.325 90.17 180) (fields_autoplaced)
@@ -2060,6 +2105,36 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 202.692 66.294 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 164db7f7-1c7d-4ee5-9068-728bf3c24288)
+    (property "Reference" "TP10" (at 201.422 62.484 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 201.422 65.024 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 197.612 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 197.612 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bb96372f-d67f-463a-a51e-71c2c1fb4fd2))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP10") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "TP15") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 52.705 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17b9f19a-253e-4795-9902-515367b990e3)
@@ -2081,6 +2156,31 @@
       (project "plaqchek_sipm_sens"
         (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
           (reference "C18") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 215.646 72.644 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1c7bd3d5-0af7-43c3-9bb2-eb0b2941365a)
+    (property "Reference" "#PWR057" (at 215.646 78.994 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 215.646 77.724 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 215.646 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 215.646 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 89d4edd4-b5a5-436f-9969-63050a011f16))
+    (instances
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -2216,8 +2316,8 @@
     (property "Datasheet" "~" (at 189.865 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c995d5ef-9de6-42c6-b8cb-2997d48cad94))
-    (pin "2" (uuid 6d8af868-7fd2-4014-93da-6957e91b4071))
+    (pin "1" (uuid fc0f0c1a-f9d7-4031-a144-d23af275f396))
+    (pin "2" (uuid 682936f9-577e-41ac-b409-a6a85f721f5f))
     (instances
       (project "plaqchek_sipm_sens"
         (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
@@ -2288,6 +2388,36 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "#PWR064") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 267.97 66.294 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2952d636-04e2-4b10-a8bb-93aecc7373ec)
+    (property "Reference" "TP10" (at 266.7 62.484 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 266.7 65.024 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 262.89 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 262.89 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f4704716-e1c6-4cdb-ada3-9c26f3bd7ffa))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP10") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "TP20") (unit 1)
         )
       )
     )
@@ -2379,6 +2509,36 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 241.046 66.294 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3b3d856b-d506-48c5-8683-baa273dff40e)
+    (property "Reference" "TP10" (at 239.776 62.484 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 239.776 65.024 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 235.966 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 235.966 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 633d344c-c5ea-4729-98ab-a4702cad361e))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP10") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "TP18") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 250.19 50.165 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3f71bc91-605f-4708-bbd9-6248527a6d08)
@@ -2424,6 +2584,31 @@
       (project "plaqchek_sipm_sens"
         (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
           (reference "H4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 228.092 72.644 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4146b9b4-e727-4526-be0e-614564e98513)
+    (property "Reference" "#PWR054" (at 228.092 78.994 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 228.092 77.724 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 228.092 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 228.092 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ebfc5a60-05b6-4924-9f3a-c44f2377a51b))
+    (instances
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -2485,6 +2670,31 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/24d7ee4c-f4a5-463e-ad3b-d9f5f5cd9bf7"
           (reference "R1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 255.016 72.644 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 49175dca-5d78-4f93-ba58-a631f5c4d98f)
+    (property "Reference" "#PWR056" (at 255.016 78.994 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 255.016 77.724 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 255.016 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 255.016 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 64d79a2e-564a-4cff-b1ae-42a712f19b6d))
+    (instances
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -2752,6 +2962,31 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 202.692 72.644 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5d506721-bc54-4ecb-868f-9fbfe9cdce87)
+    (property "Reference" "#PWR053" (at 202.692 78.994 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 202.692 77.724 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 202.692 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 202.692 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8ecef420-61c6-4ac6-a8bd-685a64bd8cb0))
+    (instances
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR053") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:PWR_FLAG") (at 67.945 65.405 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 63e61292-029c-4b85-9fcc-299fa91a040d)
@@ -2933,6 +3168,36 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 215.646 66.294 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6efdcdf1-abab-40f5-97fc-5c641104d75f)
+    (property "Reference" "TP10" (at 214.376 62.484 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 214.376 65.024 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 210.566 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 210.566 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e991ec0a-f03b-4a1f-ad05-bfb1b2bb4de6))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP10") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "TP16") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:PWR_FLAG") (at 43.18 65.405 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7054d232-2af4-4f59-9453-7ed694f347be)
@@ -2983,6 +3248,36 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 228.092 66.294 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7255eb01-333a-4af9-8b5a-f4657ba93cce)
+    (property "Reference" "TP10" (at 226.822 62.484 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 226.822 65.024 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 223.012 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 223.012 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid aea05b10-c103-4dcb-bbfd-c466d3184f33))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP10") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "TP17") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 225.425 111.125 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 77030a8c-856f-4e1b-a498-bb658e6cc20d)
@@ -3008,6 +3303,31 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "#PWR064") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 267.97 72.644 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 77592fb7-ad91-4d92-9aad-2bd8df43a347)
+    (property "Reference" "#PWR058" (at 267.97 78.994 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 267.97 77.724 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 267.97 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 267.97 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 96c9c28f-4202-48ba-87fc-b7b56e8e67b0))
+    (instances
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -3362,6 +3682,31 @@
       (project "plaqchek_mlb"
         (path "/dec6eeeb-5a63-40ad-818f-f9b0bd3cf295/d0a4d532-5a87-4cfc-8959-0e250f6a44cc"
           (reference "#PWR059") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 241.046 72.644 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 888b8ebd-3367-41fa-8ab7-09e71f6826e7)
+    (property "Reference" "#PWR055" (at 241.046 78.994 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 241.046 77.724 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 241.046 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 241.046 72.644 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7e286ea1-3645-485d-b724-21377e0b22d8))
+    (instances
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -4284,8 +4629,8 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2f77a112-e65a-439f-9f35-1f1e483b6992))
-    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b6))
-    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b6))
+    (pin "2" (uuid 62258e67-8589-4513-93a2-131cd7cc11b7))
+    (pin "3" (uuid e8c1540b-9487-479a-9710-3db91cbd32ed))
     (pin "4" (uuid 04f8e54c-fa84-46fe-b36a-d4d5c162e265))
     (pin "5" (uuid 506719f4-df82-4289-baa1-b1f296ce29d1))
     (instances
@@ -4775,6 +5120,36 @@
       (project "plaqchek_sipm_sens"
         (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
           (reference "TP2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 255.016 66.294 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f8342a2b-be73-486d-9a7e-44487aa7f037)
+    (property "Reference" "TP10" (at 253.746 62.484 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 253.746 65.024 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 249.936 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 249.936 66.294 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c42be5a9-4e5d-42f2-a271-f7733de79fbc))
+    (instances
+      (project "plaqchek_potentiostat"
+        (path "/85475697-8ddf-4902-909c-4c6cad9d2f33"
+          (reference "TP10") (unit 1)
+        )
+      )
+      (project "plaqchek_sipm_sens"
+        (path "/ae49fc30-e8ec-4ce4-a893-3d974076e2da"
+          (reference "TP19") (unit 1)
         )
       )
     )
