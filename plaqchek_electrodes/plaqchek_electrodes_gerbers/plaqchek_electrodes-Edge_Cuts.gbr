@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.2-0*%
+%TF.CreationDate,2025-01-08T15:26:18-05:00*%
+%TF.ProjectId,plaqchek_electrodes,706c6171-6368-4656-9b5f-656c65637472,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.2-0) date 2025-01-08 15:26:18*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X141000000Y-79000000D02*
+X219000000Y-79000000D01*
+X219000000Y-128000000D01*
+X141000000Y-128000000D01*
+X141000000Y-79000000D01*
+M02*
