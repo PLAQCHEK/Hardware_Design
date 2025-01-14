@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "plaqchek_mlb")(type "KiCad")(uri "${KIPRJMOD}/plaqchek_mlb.kicad_sym")(options "")(descr ""))
+)
